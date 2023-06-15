@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e0f9ab2f02.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="lg:flex justify-between">
+    <!-- navbar -->
+    <nav class="hidden nav w-2/3 p-6 bg-slate-200 h-screen fixed z-50 lg:block lg:w-1/4 lg:h-full">
+        <div class="flex justify-between items-center">
+            <img class="rounded w-28" src="./images/avatar_g.jpg" />
+            <i onclick="toggleNav()" id="close-nav" class="fa-solid fa-x text-5xl cursor-pointer"></i>
+        </div>
+        <h2 class="uppercase text-2xl font-semibold my-4">portfolio</h2>
+        <ul class="flex flex-col gap-2">
+            <li class="uppercase cursor-pointer hover:text-teal-600">
+                <i class="fa-solid fa-table-cells-large mr-3"></i>
+                portfolio
+            </li>
+            <li class="uppercase cursor-pointer hover:text-teal-600">
+                <i class="fa-solid fa-user mr-3"></i>
+                about
+            </li>
+
+            <li class="uppercase cursor-pointer hover:text-teal-600">
+                <i class="fa-solid fa-envelope mr-3"></i>contact
+            </li>
+        </ul>
+        <div class="social mt-5">
+            <i class="fa-brands fa-facebook cursor-pointer hover:text-neutral-500"></i>
+            <i class="fa-brands fa-instagram  cursor-pointer  hover:text-neutral-500"></i>
+            <i class="fa-brands fa-snapchat cursor-pointer  hover:text-neutral-500"></i>
+            <i class="fa-brands fa-pinterest-p cursor-pointer  hover:text-neutral-500"></i>
+            <i class="fa-brands fa-twitter cursor-pointer  hover:text-neutral-500"></i>
+            <i class="fa-brands fa-linkedin-in cursor-pointer  hover:text-neutral-500"></i>
+        </div>
+
+    </nav>
+    <div class="container lg:ps-96">
+        <!-- header -->
+        <header class="p-5">
+            <div class="flex justify-between items-center">
+                <i onclick="toggleNav()" class=" fa-solid fa-bars cursor-pointer text-4xl  lg:invisible"></i>
+                <img class=" rounded-full w-16" src="./images/avatar_g.jpg" />
+            </div>
+            <h1 class="capitalize font-semibold text-4xl my-6">my portfolio</h1>
+        </header>
+        <!-- main content -->
+        <main class="px-5">
+            <section class="cards md:grid md:grid-cols-2 lg:grid-cols-3  gap-4">
+                <div class="card m-5">
+                    <img class="rounded hover:opacity-60 w-full" src="./images/mountains.jpg" alt="mountains">
+                    <h5 class="capitalize font-semibold my-4">lorem ipsum</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, inventore. Quae, quasi
+                        nostrum
+                        laudantium sapiente consequatur natus et neque tenetur!</p>
+                </div>
+                <div class="card m-5">
+                    <img class="rounded hover:opacity-60 w-full" src="./images/lights.jpg" alt="lights">
+                    <h5 class="capitalize font-semibold my-4">lorem ipsum</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, inventore. Quae, quasi
+                        nostrum
+                        laudantium sapiente consequatur natus et neque tenetur!</p>
+                </div>
+                <div class="card m-5">
+                    <img class="rounded hover:opacity-60 w-full" src="./images/nature.jpg" alt="nature">
+                    <h5 class="capitalize font-semibold my-4">lorem ipsum</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, inventore. Quae, quasi
+                        nostrum
+                        laudantium sapiente consequatur natus et neque tenetur!</p>
+                </div>
+                <div class="card m-5">
+                    <img class="rounded hover:opacity-60 w-full" src="./images/p1.jpg" alt="p1">
+                    <h5 class="capitalize font-semibold my-4">lorem ipsum</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, inventore. Quae, quasi
+                        nostrum
+                        laudantium sapiente consequatur natus et neque tenetur!</p>
+                </div>
+                <div class="card m-5">
+                    <img class="rounded hover:opacity-60 w-full" src="./images/p2.jpg" alt="p2">
+                    <h5 class="capitalize font-semibold my-4">lorem ipsum</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, inventore. Quae, quasi
+                        nostrum
+                        laudantium sapiente consequatur natus et neque tenetur!</p>
+                </div>
+                <div class="card m-5">
+                    <img class="rounded hover:opacity-60 w-full" src="./images/p3.jpg" alt="p3">
+                    <h5 class="capitalize font-semibold my-4">lorem ipsum</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, inventore. Quae, quasi
+                        nostrum
+                        laudantium sapiente consequatur natus et neque tenetur!</p>
+                </div>
+            </section>
+            <div class="pagination flex justify-center my-5">
+                <button class="hover:bg-black hover:text-white p-2 w-10"><i
+                        class="fa-solid fa-angles-left"></i></button>
+                <button class="bg-black text-white hover:bg-neutral-600 p-2 w-10">1</button>
+                <button class="hover:bg-black hover:text-white p-2 w-10">2</button>
+                <button class="hover:bg-black hover:text-white p-2 w-10">3</button>
+                <button class="hover:bg-black hover:text-white p-2 w-10">4</button>
+                <button class="hover:bg-black hover:text-white p-2 w-10"><i
+                        class="fa-solid fa-angles-right"></i></button>
+            </div>
+        </main>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
