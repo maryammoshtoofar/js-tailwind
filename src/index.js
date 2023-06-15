@@ -1,5 +1,8 @@
 const nav = document.querySelector(".nav");
 const body = document.querySelector("body");
+const closeNav = document.getElementById("close-nav");
+const openNav = document.getElementById("open-nav");
+
 import { data } from "./cards-data.js";
 
 function toggleNav() {
@@ -11,7 +14,6 @@ function toggleNav() {
     body.classList.remove("overflow-hidden");
   }
 }
-
 
 function generateCards() {
   const cardsContainer = document.querySelector(".cards");
@@ -30,5 +32,8 @@ function generateCards() {
     cardsContainer.append(card);
   });
 }
+// listeners
 
 document.addEventListener("DOMContentLoaded", generateCards);
+closeNav.addEventListener("click", toggleNav);
+openNav.addEventListener("click", toggleNav);
